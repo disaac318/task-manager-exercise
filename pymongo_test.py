@@ -9,7 +9,7 @@ if os.path.exists("env.py"):
 
 app = Flask(__name__)
 
-# ✅ MongoDB connection string (must include DB name!)
+
 app.config["MONGO_URI"] = os.environ.get(
     "MONGO_URI",
     "mongodb+srv://shuttermaven_db_user:CEorNGltYuxH6TF9@myclusterdb01.crvzcna.mongodb.net/?appName=MyClusterDB01"
